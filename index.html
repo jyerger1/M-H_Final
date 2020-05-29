@@ -2,169 +2,225 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="home.css" />
-  <style>
-    /* Make the image fully responsive */
-    /* .carousel-inner img {
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <style>
+
+        /* Make the image fully responsive */
+        /* .carousel-inner img {
             width: 100%;
             height: 100%;
         } */
-  </style>
+    </style>
+
+      <!-- Boostrap CSS -->
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
+  <!-- Main CSS -->
+  <!-- <link href="navbar.css" rel="stylesheet" /> -->
+  <!-- Font CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body class="body-h">
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
-      <a class="navbar-brand" href="#">
-        <img src="jamsjellieslogo.png" height="100px" alt="logo" />
-        <!-- Picture has to be in the same folder -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse rounded" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link px-4" href="index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link pr-4" href="Products.html">Products</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="About.html">About Us/Contact</a>
-          </li>
-        </ul>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="#">
+                <img src="jamsjellieslogo.png" height="100px" alt="logo" />
+            </a>
+            <!-- Toggler/Collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse rounded" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link pr-4" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link pr-4" href="Products.html">Products</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="About.html">About Us/Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i
+                                class="fa fa-shopping-cart"></i> Cart</a>
+                        <div class="dropdown-menu dropleft">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item mx-auto"><img src="raspberry.png" height="70px" />
+                                    <button type="button" class="btn btn-danger">X</button>
+                                </li>
+                                <li class="list-group-item mx-auto"><img src="cinnamonjam.png" height="70px" />
+                                    <button type="button" class="btn btn-danger">X</button>
+                                </li>
+                                <li class="list-group-item mx-auto">
+                                    <a href="">View Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img class="logoimage" src="https://lh3.google.com/u/0/d/1GScSgg_M8LK55DuIoY484jbar56fqN0E=w2840-h1486-iv1"
+            alt="logo" width="25%" />
+        <div class="box-1">
+            <h1 id="titleH1">Maher and Hall's Famous Jams and Jellies</h1>
+            <h2 id="om">Our Mission and Vision</h2>
+
+            <p class="p-h">
+                We are a sustainable supplier of jams and jellies from heirloom
+                fruits. <br />
+                We strive to offer the most affordable and delicious jams in the
+                South.
+            </p>
+        </div>
+
+        <div class="container2">
+            <div class="backgroundcolor"></div>
+            <h2 id="h2-h">Most Popular Products</h2>
+
+            <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading tracking-in-expand-fwd" style="margin-bottom: 40px">Apple Butter</div>
+                        <div class="panel-body">
+                            <a href="Products.html">
+                            <img class="img-responsive mx-auto d-block"
+                                src="https://lh3.google.com/u/0/d/1cs7P5hKCIl8YOfg2kx4jTQ8srp4o_NAr=w2730-h1486-iv1"
+                                alt="" width="90%"/></a>
+                                
+
+                         
+
+                            <div class="pannel-footer">
+                                <button type ="button" class="btn mx-auto d-block"><a  href="Products.html">More Info</a>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" style="margin-bottom: 40px">Blackberry</div>
+                        <div class="panel-body">
+                            <a href="Products.html">
+                            <img class="img-responsive mx-auto d-block rotate-left"
+                                src="https://lh3.google.com/u/0/d/1thp3PH76vBHrUabrjDoOwmk8qMisdZM0=w2730-h1486-iv2"
+                                alt="" width="90%" /></a>
+
+
+                            
+
+
+                            <div class="pannel-footer">
+                                <button class="btn mx-auto d-block"><a href="products.html#blackberrymodal">More Info</a>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading" style="margin-bottom: 40px">Blueberry</div>
+                        <div class="panel-body">
+                            <a href="Products.html">
+                            <img class="img-responsive mx-auto d-block rotate-left"
+                                src="https://lh3.google.com/u/0/d/1_MS1NWoYFGndl3umVR0h1c7H2vVUUKyz=w1564-h1486-iv2"
+                                alt="" width="90%" /></a>
+
+                           
+                                
+
+
+                            <div class="pannel-footer">
+                                <button class="btn mx-auto d-block"><a href="Products.html">More Info</a>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 4 -->
+                <div class="col-sm-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Grape Jelly
+                        </div>
+                        <div class="panel-body">
+                            <a href="Products.html">
+                            <img class="img-responsive mx-auto d-block rotate-left shadow-drop-2-center"
+                                src="imgs/Products/grapejelly.png"
+                                alt="" width="90%" /></a>
+
+                          
+
+                            <div class="pannel-footer">
+                                <button class="btn mx-auto d-block"><a href="Products.html">More Info</a>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- Card One Modal -->
+    <div class="modal fade" id="grapemodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Grape Jelly</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="imgs/Products/grapejelly.png" alt="Grape Jelly" />
+              <p>
+           
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="foottext">
+                <h4>12 Oz. Jar</h4>
+                <h2>$9.99 USD</h2>
+              </div>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">
+                <h2>Purchase</h2>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
+<!-- Card One Modal -->
+    <!-- container ends here -->
 
-  <div class="container">
-    <img class="logoimage" src="https://lh3.google.com/u/0/d/1GScSgg_M8LK55DuIoY484jbar56fqN0E=w2840-h1486-iv1"
-      alt="logo" width="25%" />
-    <div class="box-1">
-      <h1 id="titleH1">Maher and Hall's Famous Jams and Jellies</h1>
-      <h2 id="om">Our Mission and Vision</h2>
-
-      <p class="p-h">
-        We are a sustainable supplier of jams and jellies from heirloom
-        fruits. <br />
-        We strive to offer the most affordable and delicious jams in the
-        South.
-      </p>
     </div>
 
-    <div class="container2">
-      <div class="backgroundcolor"></div>
-      <h2 id="h2-h">Most Popular Products</h2>
-
-      <div class="row">
-        <!-- CARD 1 -->
-        <div class="col-sm-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading" style="margin-bottom: 40px">Apple Butter</div>
-            <div class="panel-body">
-              <img class="img-responsive mx-auto d-block rotate-left"
-                src="https://lh3.google.com/u/0/d/1cs7P5hKCIl8YOfg2kx4jTQ8srp4o_NAr=w2730-h1486-iv1" alt=""
-                width="70%" />
-
-              <p class="p-h">Apple <br>
-                Butter <br>
-                12oz </p>
-
-              <div class="pannel-footer">
-                <button class="button-h mx-auto d-block"><a href="Products.html#applebutter">More</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD 2 -->
-        <div class="col-sm-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading" style="margin-bottom: 40px">Blackberry</div>
-            <div class="panel-body">
-              <img class="img-responsive mx-auto d-block rotate-left"
-                src="https://lh3.google.com/u/0/d/1thp3PH76vBHrUabrjDoOwmk8qMisdZM0=w2730-h1486-iv2" alt=""
-                width="70%" />
-
-
-              <p class="p-h">Blackberry <br>
-                berry <br>
-                12oz </p>
-
-
-              <div class="pannel-footer">
-                <button class="button mx-auto d-block"><a href="Products.html">More</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD 3 -->
-        <div class="col-sm-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading" style="margin-bottom: 40px">Blueberry</div>
-            <div class="panel-body">
-              <img class="img-responsive mx-auto d-block rotate-left"
-                src="https://lh3.google.com/u/0/d/1_MS1NWoYFGndl3umVR0h1c7H2vVUUKyz=w1564-h1486-iv2" alt=""
-                width="70%" />
-
-              <p class="p-h">Blueberry <br>
-                Berry <br>
-                12oz </p>
-
-
-
-              <div class="pannel-footer">
-                <button class="button mx-auto d-block"><a href="Products.html" target="#blueberrymodal">More</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CARD 4 -->
-        <div class="col-sm-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              Cinnamon Spiced Triple Berry Jam
-            </div>
-            <div class="panel-body">
-              <img class="img-responsive mx-auto d-block rotate-left"
-                src="https://lh3.google.com/u/0/d/1sdCgVGGp8gcTqGhpzRFdghsE8pgQE1TW=w2538-h1486-iv7" alt=""
-                width="70%" />
-
-              <p class="p-h">Cinnamon <br>
-                Berry Jam <br>
-                12oz </p>
-
-
-              <div class="pannel-footer">
-                <button class="button mx-auto d-block"><a href="Products.html">More</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
-  <!-- container ends here -->
-
-  </div>
-
-  </div>
 
 
-  <!-- <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div id="demo" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -201,93 +257,137 @@
     </div>
     <div></div> -->
 
-  <div class="top-content">
-    <div class="container-fluid">
-      <div id="carousel-example" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-            <img src="imgs/Carousel/c.png" class="img-fluid mx-auto d-block" alt="img1">
-          </div>
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-            <img src="imgs/Carousel/CCwhite.png" class="img-fluid mx-auto d-block" alt="img2">
-          </div>
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-            <img src="imgs/Carousel/Shannon.png" class="img-fluid mx-auto d-block" alt="img3">
-          </div>
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-            <img src="imgs/Carousel/Sred.png" class="img-fluid mx-auto d-block" alt="img4">
-          </div>
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-            <img src="imgs/Carousel/joseph.png" class="img-fluid mx-auto d-block" alt="img5">
-          </div>
-          <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-            <img src="imgs/Carousel/Jblue.png" class="img-fluid mx-auto d-block" alt="img6">
-          </div>
+    <div class="top-content">
+        <div class="container-fluid">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li> -->
+                  </ol>
+                
+                <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                        <img src="imgs/Carousel/c.png" class="img-fluid mx-auto d-block" alt="img1">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/Carousel/CCwhite.png" class="img-fluid mx-auto d-block" alt="img2">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/Carousel/Shannon.png" class="img-fluid mx-auto d-block" alt="img3">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/Carousel/Sred.png" class="img-fluid mx-auto d-block" alt="img4">
+                    </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/Carousel/joseph.png" class="img-fluid mx-auto d-block" alt="img5">
+                    </div>
+                  
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/Carousel/Jblue.png" class="img-fluid mx-auto d-block" alt="img6">
+                    </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/c.png" class="img-fluid mx-auto d-block" alt="img1">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/CCwhite.png" class="img-fluid mx-auto d-block" alt="img2">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/Shannon.png" class="img-fluid mx-auto d-block" alt="img3">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/Sred.png" class="img-fluid mx-auto d-block" alt="img4">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/joseph.png" class="img-fluid mx-auto d-block" alt="img5">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="imgs/Carousel/Jblue.png" class="img-fluid mx-auto d-block" alt="img6">
+                        </div>
+                                           
 
+
+
+                </div>
+                <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
     </div>
-  </div>
 
-  <!--FOOTER-->
+    <!--FOOTER-->
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
 
-          <p class="jumbo">1414 S Tryon St.<br />Charlotte, NC 28203</p>
-          <p class="jumbo">info@MHJamsandJellies.com</p>
+                    <p class="jumbo">1414 S Tryon St.<br />Charlotte, NC 28203</p>
+                    <p class="jumbo">info@MHJamsandJellies.com</p>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About/Contact Us</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+            <hr>
         </div>
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Products.html">Products</a></li>
-            <li><a href="About.html">About/Contact Us</a></li>
-            <!-- <li><a href="#">Sitemap</a></li> -->
-          </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                        <a href="#">Creative_Influencers</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <!-- <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
         </div>
-
-
-
-
-      </div>
-      <hr>
+    </footer>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-            <a href="#">Creative_Influencers</a>.
-          </p>
-        </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <!-- <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> -->
-          </ul>
-        </div>
-      </div>
     </div>
-  </footer>
-  </div>
 
-  </div>
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+ <!-- Popper -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <!-- Bootstrap -->
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
