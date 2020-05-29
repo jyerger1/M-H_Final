@@ -3,6 +3,26 @@
 ​
 
 <head>
+
+     <!-- Boostrap CSS -->
+     <link
+     rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+     crossorigin="anonymous"
+   />
+   <!-- Main CSS -->
+   <!-- <link href="navbar.css" rel="stylesheet" /> -->
+   <!-- Font CSS -->
+   <link
+     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+     rel="stylesheet"
+   />
+   <!-- Font Awesome CSS -->
+   <link
+     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+     rel="stylesheet"
+   />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -37,31 +57,64 @@
 ​
 
 <body>
-    <!--Nav Bar-->
-    <!-- <div class="container-fluid"> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="jamsjellieslogo.png" height="100px" alt="logo" /> <!-- Picture has to be in the same folder -->
+          <img src="jamsjellieslogo.png" height="100px" alt="logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- Toggler/Collapsible Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+  
         <div class="collapse navbar-collapse rounded" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link px-4" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link pr-4" href="Products.html">Products</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="About.html">About Us/Contact</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link pr-4" href="index2.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link pr-4" href="Products.html">Products</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="About.html">About Us/Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                ><i class="fa fa-shopping-cart"></i> Cart</a
+              >
+              <div class="dropdown-menu dropleft">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item mx-auto">
+                    <img src="imgs/Products/raspberry.png" height="70px" />
+                    <button type="button" class="btn btn-danger">X</button>
+                  </li>
+                  <li class="list-group-item mx-auto">
+                    <img src="imgs/Products/grapejelly.png" height="70px" />
+                    <button type="button" class="btn btn-danger">X</button>
+                  </li>
+                  <li class="list-group-item mx-auto">
+                    <a href="">View Cart</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    </nav>
-
+      </nav>
+      <!-- End Navigation -->
 
     <!--Jumbotron-->
     ​
@@ -292,8 +345,8 @@
                 <div class="col-sm-12 col-md-6">
                     <h6>About</h6>
 
-                    <p class="jumbo">1414 S Tryon St.<br />Charlotte, NC 28203</p>
-                    <p class="jumbo">info@MHJamsandJellies.com</p>
+                    <p id="address" class="jumbo">1414 S Tryon St.<br />Charlotte, NC 28203</p>
+                    <p id="address" class="jumbo">info@MHJamsandJellies.com</p>
 
                     <br>
                     <h6>Quick Links</h6>
@@ -318,7 +371,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+                    <p id="address" class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
                         <a href="#">Creative_Influencers</a>.
                     </p>
                 </div>
@@ -338,7 +391,7 @@
     ​ ​
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -346,7 +399,26 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+
+         <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Popper -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap -->
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </body>
 ​
 
